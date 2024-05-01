@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.utils.shared</groupId>
+    <artifactId>utils-shared</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>utils-shared</name>
+    <url>http://maven.apache.org</url>
+    <packaging>jar</packaging>
+
+    <properties>
+        <java.version>11</java.version>
+        <jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
+        <testng.version>7.7.1</testng.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- Plugin pour exécuter le processeur d'annotations -->
+                <groupId>org.bsc.maven</groupId>
+                <artifactId>maven-processor-plugin</artifactId>
+                <version>3.3.3</version> <!-- Utilisez la dernière version si disponible -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>process</goal>
+                        </goals>
+                        <phase>generate-sources</phase> <!-- Cette phase déclenchera le processeur d'annotations -->
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputDirectory>${project.build.directory}/generated-sources/annotations</outputDirectory>
+                    <processors>
+                        <processor>com.utils.shared.annotation.processor.BindingAnnotationProcessor</processor>
+                    </processors>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,35 @@
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <executions>
+        <execution>
+            <id>enforce-naming-conventions</id>
+            <goals>
+                <goal>enforce</goal>
+            </goals>
+            <configuration>
+                <rules>
+                    <!--  Version java minimale requis -->
+                    <requireJavaVersion>
+                        <version>${java.version}</version>
+                    </requireJavaVersion>
+
+                    <!--  Règle nommage de certains classees -->
+                    <requireUpperBoundDeps>
+                        <packages>
+                            <package>**.util</package>
+                        </packages>
+                        <message>Classes in packages ending with '.util' must have names ending with 'Util'.</message>
+                        <dependencyPatterns>
+                            <dependencyPattern>**/*</dependencyPattern>
+                        </dependencyPatterns>
+                        <dependencyExpressions>
+                            <dependencyExpression>!(\b[a-zA-Z0-9]+Util\b)</dependencyExpression>
+                        </dependencyExpressions>
+                    </requireUpperBoundDeps>
+                </rules>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+

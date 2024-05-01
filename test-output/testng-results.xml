@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="130" passed="117" failed="13" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-25T14:22:41 CEST" name="Default suite" finished-at="2023-06-25T14:22:41 CEST" duration-ms="931">
+    <groups>
+    </groups>
+    <test started-at="2023-06-25T14:22:41 CEST" name="Default test" finished-at="2023-06-25T14:22:41 CEST" duration-ms="931">
+      <class name="com.utils.shared.util.FileUtilTest">
+        <test-method signature="testCreateDirectoryStructure()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testCreateDirectoryStructure" finished-at="2023-06-25T14:22:41 CEST" duration-ms="16" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.utils.shared.util.FileUtilTest.testCreateDirectoryStructure(FileUtilsTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDirectoryStructure -->
+        <test-method signature="testCreateDirectoryStructure_invalidRoot()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testCreateDirectoryStructure_invalidRoot" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDirectoryStructure_invalidRoot -->
+        <test-method signature="testFindFilesByExtension()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testFindFilesByExtension" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [2]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected [0] but found [2]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1418)
+at org.testng.Assert.assertEquals(Assert.java:1382)
+at org.testng.Assert.assertEquals(Assert.java:1428)
+at com.utils.shared.util.FileUtilTest.testFindFilesByExtension(FileUtilsTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindFilesByExtension -->
+        <test-method signature="testGetDirectorySize()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testGetDirectorySize" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [1024]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected [0] but found [1024]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:979)
+at org.testng.Assert.assertEquals(Assert.java:955)
+at org.testng.Assert.assertEquals(Assert.java:989)
+at com.utils.shared.util.FileUtilTest.testGetDirectorySize(FileUtilsTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDirectorySize -->
+        <test-method signature="testGetDirectorySize_invalidDirectory()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testGetDirectorySize_invalidDirectory" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDirectorySize_invalidDirectory -->
+        <test-method signature="testListFilesInDirectory()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testListFilesInDirectory" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [2]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected [0] but found [2]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1418)
+at org.testng.Assert.assertEquals(Assert.java:1382)
+at org.testng.Assert.assertEquals(Assert.java:1428)
+at com.utils.shared.util.FileUtilTest.testListFilesInDirectory(FileUtilsTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListFilesInDirectory -->
+        <test-method signature="testReadFileAsString()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testReadFileAsString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[path\to\file.txt (Le chemin d’accès spécifié est introuvable)]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+at com.utils.shared.util.FileUtilTest.testReadFileAsString(FileUtilsTest.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadFileAsString -->
+        <test-method signature="testReadFileAsString_invalidFile()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testReadFileAsString_invalidFile" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[invalid\file.txt (Le chemin d’accès spécifié est introuvable)]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+at com.utils.shared.util.FileUtilTest.testReadFileAsString_invalidFile(FileUtilsTest.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadFileAsString_invalidFile -->
+        <test-method signature="testWriteStringToFile()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testWriteStringToFile" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[path\to\file.txt (Le chemin d’accès spécifié est introuvable)]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+at com.utils.shared.util.FileUtilTest.testWriteStringToFile(FileUtilsTest.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteStringToFile -->
+        <test-method signature="testWriteStringToFile_invalidFile()[pri:0, instance:com.utils.shared.util.FileUtilTest@5c33f1a9]" started-at="2023-06-25T14:22:41 CEST" name="testWriteStringToFile_invalidFile" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[invalid\file.txt (Le chemin d’accès spécifié est introuvable)]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+at com.utils.shared.util.FileUtilTest.testWriteStringToFile_invalidFile(FileUtilsTest.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteStringToFile_invalidFile -->
+      </class> <!-- com.utils.shared.util.FileUtilTest -->
+      <class name="com.utils.shared.unit.test.assertions.ObjectComparatorTest">
+        <test-method signature="testCompareObjects()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects" finished-at="2023-06-25T14:22:41 CEST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects -->
+        <test-method signature="testCompareObjects_Collections()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Collections" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Collections -->
+        <test-method signature="testCompareObjects_Collections_DifferentElements()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Collections_DifferentElements" finished-at="2023-06-25T14:22:41 CEST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Collections_DifferentElements -->
+        <test-method signature="testCompareObjects_Collections_DifferentSizes()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Collections_DifferentSizes" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Collections_DifferentSizes -->
+        <test-method signature="testCompareObjects_Collections_Empty()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Collections_Empty" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Collections_Empty -->
+        <test-method signature="testCompareObjects_Collections_Null()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Collections_Null" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Collections_Null -->
+        <test-method signature="testCompareObjects_ComplexObjects()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_ComplexObjects" finished-at="2023-06-25T14:22:41 CEST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_ComplexObjects -->
+        <test-method signature="testCompareObjects_ComplexObjects_DifferentFields()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_ComplexObjects_DifferentFields" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_ComplexObjects_DifferentFields -->
+        <test-method signature="testCompareObjects_ComplexObjects_Null()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_ComplexObjects_Null" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_ComplexObjects_Null -->
+        <test-method signature="testCompareObjects_DifferentTypes()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_DifferentTypes" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_DifferentTypes -->
+        <test-method signature="testCompareObjects_ImmutableType()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_ImmutableType" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_ImmutableType -->
+        <test-method signature="testCompareObjects_ImmutableType_NotEqual()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_ImmutableType_NotEqual" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_ImmutableType_NotEqual -->
+        <test-method signature="testCompareObjects_Null()[pri:0, instance:com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c]" started-at="2023-06-25T14:22:41 CEST" name="testCompareObjects_Null" finished-at="2023-06-25T14:22:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCompareObjects_Null -->
+      </class> <!-- com.utils.shared.unit.test.assertions.ObjectComparatorTest -->
+      <class name="com.utils.shared.util.JsonUtilTest">
+        <test-method signature="testFromJson_InvalidJson_ReturnsNull()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_InvalidJson_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [java.lang.Object@79da8dc5]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected [null] but found [java.lang.Object@79da8dc5]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotSame(Assert.java:1573)
+at org.testng.Assert.assertNull(Assert.java:1506)
+at org.testng.Assert.assertNull(Assert.java:1494)
+at com.utils.shared.util.JsonUtilTest.testFromJson_InvalidJson_ReturnsNull(JsonUtilsTest.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_InvalidJson_ReturnsNull -->
+        <test-method signature="testFromJson_JsonArray_ReturnsArrayObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonArray_ReturnsArrayObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="60" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Arrays not equal: expected: null and actual: [foo, bar, baz]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: Arrays not equal: expected: null and actual: [foo, bar, baz]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.assertEquals(Assert.java:1761)
+at org.testng.Assert.assertEquals(Assert.java:1918)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonArray_ReturnsArrayObject(JsonUtilsTest.java:116)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonArray_ReturnsArrayObject -->
+        <test-method signature="testFromJson_JsonBoolean_ReturnsBooleanObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonBoolean_ReturnsBooleanObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[Cannot cast java.lang.Boolean to boolean]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.ClassCastException: Cannot cast java.lang.Boolean to boolean
+at java.base/java.lang.Class.cast(Class.java:3946)
+at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:209)
+at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonBoolean_ReturnsBooleanObject(JsonUtilsTest.java:107)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonBoolean_ReturnsBooleanObject -->
+        <test-method signature="testFromJson_JsonCollection_ReturnsCollectionObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonCollection_ReturnsCollectionObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Collections not equal: expected: null and actual: [foo, bar, baz]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: Collections not equal: expected: null and actual: [foo, bar, baz]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.assertEquals(Assert.java:1625)
+at org.testng.Assert.assertEquals(Assert.java:1605)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonCollection_ReturnsCollectionObject(JsonUtilsTest.java:127)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonCollection_ReturnsCollectionObject -->
+        <test-method signature="testFromJson_JsonNumber_ReturnsNumberObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonNumber_ReturnsNumberObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[Cannot cast java.lang.Integer to int]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.ClassCastException: Cannot cast java.lang.Integer to int
+at java.base/java.lang.Class.cast(Class.java:3946)
+at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:201)
+at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonNumber_ReturnsNumberObject(JsonUtilsTest.java:99)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonNumber_ReturnsNumberObject -->
+        <test-method signature="testFromJson_JsonObject_ReturnsMapObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonObject_ReturnsMapObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Maps not equal: expected: null and actual: {name=John Doe, age=30, employed=true}]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: Maps not equal: expected: null and actual: {name=John Doe, age=30, employed=true}
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.assertEquals(Assert.java:2131)
+at org.testng.Assert.assertEquals(Assert.java:2089)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonObject_ReturnsMapObject(JsonUtilsTest.java:138)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonObject_ReturnsMapObject -->
+        <test-method signature="testFromJson_JsonString_ReturnsStringObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_JsonString_ReturnsStringObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected ["Hello, World!"] but found [Hello, World!]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: expected ["Hello, World!"] but found [Hello, World!]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.utils.shared.util.JsonUtilTest.testFromJson_JsonString_ReturnsStringObject(JsonUtilsTest.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_JsonString_ReturnsStringObject -->
+        <test-method signature="testFromJson_NullJson_ReturnsNull()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testFromJson_NullJson_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFromJson_NullJson_ReturnsNull -->
+        <test-method signature="testToJson_ArrayObject_ReturnsJsonArray()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_ArrayObject_ReturnsJsonArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_ArrayObject_ReturnsJsonArray -->
+        <test-method signature="testToJson_BooleanObject_ReturnsJsonBoolean()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_BooleanObject_ReturnsJsonBoolean" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_BooleanObject_ReturnsJsonBoolean -->
+        <test-method signature="testToJson_CollectionObject_ReturnsJsonArray()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_CollectionObject_ReturnsJsonArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_CollectionObject_ReturnsJsonArray -->
+        <test-method signature="testToJson_MapObject_ReturnsJsonObject()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_MapObject_ReturnsJsonObject" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_MapObject_ReturnsJsonObject -->
+        <test-method signature="testToJson_NullObject_ReturnsNull()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_NullObject_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_NullObject_ReturnsNull -->
+        <test-method signature="testToJson_NumberObject_ReturnsJsonNumber()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_NumberObject_ReturnsJsonNumber" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_NumberObject_ReturnsJsonNumber -->
+        <test-method signature="testToJson_StringObject_ReturnsJsonString()[pri:0, instance:com.utils.shared.util.JsonUtilTest@1623b78d]" started-at="2023-06-25T14:22:41 CEST" name="testToJson_StringObject_ReturnsJsonString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToJson_StringObject_ReturnsJsonString -->
+      </class> <!-- com.utils.shared.util.JsonUtilTest -->
+      <class name="com.utils.shared.util.DateUtilTest">
+        <test-method signature="testAddDays()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testAddDays" finished-at="2023-06-25T14:22:41 CEST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddDays -->
+        <test-method signature="testAreEqualDates()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testAreEqualDates" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreEqualDates -->
+        <test-method signature="testAreEqualDates_DifferentDates()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testAreEqualDates_DifferentDates" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreEqualDates_DifferentDates -->
+        <test-method signature="testCalculateAge()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testCalculateAge" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculateAge -->
+        <test-method signature="testFormatDate()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testFormatDate" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormatDate -->
+        <test-method signature="testFormatDate_NullDate()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testFormatDate_NullDate" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormatDate_NullDate -->
+        <test-method signature="testGetDifferenceInDays()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testGetDifferenceInDays" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDifferenceInDays -->
+        <test-method signature="testIsAfter()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testIsAfter" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsAfter -->
+        <test-method signature="testIsAfter_NotAfter()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testIsAfter_NotAfter" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsAfter_NotAfter -->
+        <test-method signature="testIsBefore()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testIsBefore" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsBefore -->
+        <test-method signature="testIsBefore_NotBefore()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testIsBefore_NotBefore" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsBefore_NotBefore -->
+        <test-method signature="testParseDate()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testParseDate" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate -->
+        <test-method signature="testParseDate_InvalidFormat()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testParseDate_InvalidFormat" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate_InvalidFormat -->
+        <test-method signature="testParseDate_NullDate()[pri:0, instance:com.utils.shared.util.DateUtilTest@c8c12ac]" started-at="2023-06-25T14:22:41 CEST" name="testParseDate_NullDate" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseDate_NullDate -->
+      </class> <!-- com.utils.shared.util.DateUtilTest -->
+      <class name="com.utils.shared.util.ObjectUtilTest">
+        <test-method signature="testCast()[pri:0, instance:com.utils.shared.util.ObjectUtilTest@6adbc9d]" started-at="2023-06-25T14:22:41 CEST" name="testCast" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCast -->
+        <test-method signature="testDeepCopy()[pri:0, instance:com.utils.shared.util.ObjectUtilTest@6adbc9d]" started-at="2023-06-25T14:22:41 CEST" name="testDeepCopy" finished-at="2023-06-25T14:22:41 CEST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeepCopy -->
+        <test-method signature="testEquals()[pri:0, instance:com.utils.shared.util.ObjectUtilTest@6adbc9d]" started-at="2023-06-25T14:22:41 CEST" name="testEquals" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+        <test-method signature="testIsNotNull()[pri:0, instance:com.utils.shared.util.ObjectUtilTest@6adbc9d]" started-at="2023-06-25T14:22:41 CEST" name="testIsNotNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNotNull -->
+        <test-method signature="testIsNull()[pri:0, instance:com.utils.shared.util.ObjectUtilTest@6adbc9d]" started-at="2023-06-25T14:22:41 CEST" name="testIsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNull -->
+      </class> <!-- com.utils.shared.util.ObjectUtilTest -->
+      <class name="com.utils.shared.unit.test.data.PopulatorTest">
+        <test-method signature="testPopulate_shouldPopulateWithOption()[pri:0, instance:com.utils.shared.unit.test.data.PopulatorTest@7f0eb4b4]" started-at="2023-06-25T14:22:41 CEST" name="testPopulate_shouldPopulateWithOption" finished-at="2023-06-25T14:22:41 CEST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPopulate_shouldPopulateWithOption -->
+        <test-method signature="testPopulate_shouldPopulateWithoutOption()[pri:0, instance:com.utils.shared.unit.test.data.PopulatorTest@7f0eb4b4]" started-at="2023-06-25T14:22:41 CEST" name="testPopulate_shouldPopulateWithoutOption" finished-at="2023-06-25T14:22:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPopulate_shouldPopulateWithoutOption -->
+      </class> <!-- com.utils.shared.unit.test.data.PopulatorTest -->
+      <class name="com.utils.shared.util.ArrayUtilTest">
+        <test-method signature="testContains_ElementInArray_ReturnsTrue()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testContains_ElementInArray_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContains_ElementInArray_ReturnsTrue -->
+        <test-method signature="testContains_ElementNotInArray_ReturnsFalse()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testContains_ElementNotInArray_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContains_ElementNotInArray_ReturnsFalse -->
+        <test-method signature="testContains_NullArray_ReturnsFalse()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testContains_NullArray_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContains_NullArray_ReturnsFalse -->
+        <test-method signature="testFindMax_EmptyArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testFindMax_EmptyArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Le tableau est vide ou nul.]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+at com.utils.shared.util.ArrayUtilTest.testFindMax_EmptyArray_ReturnsNull(ArrayUtilsTest.java:207)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindMax_EmptyArray_ReturnsNull -->
+        <test-method signature="testFindMax_NonEmptyArray_ReturnsMaxElement()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testFindMax_NonEmptyArray_ReturnsMaxElement" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindMax_NonEmptyArray_ReturnsMaxElement -->
+        <test-method signature="testFindMax_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testFindMax_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Le tableau est vide ou nul.]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+at com.utils.shared.util.ArrayUtilTest.testFindMax_NullArray_ReturnsNull(ArrayUtilsTest.java:201)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindMax_NullArray_ReturnsNull -->
+        <test-method signature="testGetSubArray_InvalidIndexes_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testGetSubArray_InvalidIndexes_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[L'index de début est supérieur à l'index de fin]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.IllegalArgumentException: L'index de début est supérieur à l'index de fin
+at com.utils.shared.util.ArrayUtil.subarray(ArrayUtils.java:82)
+at com.utils.shared.util.ArrayUtilTest.testGetSubArray_InvalidIndexes_ReturnsNull(ArrayUtilsTest.java:166)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSubArray_InvalidIndexes_ReturnsNull -->
+        <test-method signature="testGetSubArray_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testGetSubArray_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSubArray_NullArray_ReturnsNull -->
+        <test-method signature="testGetSubArray_ValidIndexes_ReturnsSubArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testGetSubArray_ValidIndexes_ReturnsSubArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSubArray_ValidIndexes_ReturnsSubArray -->
+        <test-method signature="testIndexOf_ElementInArray_ReturnsCorrectIndex()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIndexOf_ElementInArray_ReturnsCorrectIndex" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndexOf_ElementInArray_ReturnsCorrectIndex -->
+        <test-method signature="testIndexOf_ElementNotInArray_ReturnsMinusOne()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIndexOf_ElementNotInArray_ReturnsMinusOne" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndexOf_ElementNotInArray_ReturnsMinusOne -->
+        <test-method signature="testIndexOf_NullArray_ReturnsMinusOne()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIndexOf_NullArray_ReturnsMinusOne" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIndexOf_NullArray_ReturnsMinusOne -->
+        <test-method signature="testIsEmpty_EmptyArray_ReturnsTrue()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIsEmpty_EmptyArray_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsEmpty_EmptyArray_ReturnsTrue -->
+        <test-method signature="testIsEmpty_NonEmptyArray_ReturnsFalse()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIsEmpty_NonEmptyArray_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsEmpty_NonEmptyArray_ReturnsFalse -->
+        <test-method signature="testIsEmpty_NullArray_ReturnsTrue()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testIsEmpty_NullArray_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsEmpty_NullArray_ReturnsTrue -->
+        <test-method signature="testMerge_NonEmptyArrayWithNullArray_ReturnsNonEmptyArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testMerge_NonEmptyArrayWithNullArray_ReturnsNonEmptyArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerge_NonEmptyArrayWithNullArray_ReturnsNonEmptyArray -->
+        <test-method signature="testMerge_NullArrayWithNonEmptyArray_ReturnsNonEmptyArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testMerge_NullArrayWithNonEmptyArray_ReturnsNonEmptyArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerge_NullArrayWithNonEmptyArray_ReturnsNonEmptyArray -->
+        <test-method signature="testMerge_NullArrays_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testMerge_NullArrays_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerge_NullArrays_ReturnsNull -->
+        <test-method signature="testMerge_TwoNonEmptyArrays_ReturnsMergedArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testMerge_TwoNonEmptyArrays_ReturnsMergedArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMerge_TwoNonEmptyArrays_ReturnsMergedArray -->
+        <test-method signature="testRemoveDuplicates_ArrayWithDuplicates_ReturnsArrayWithoutDuplicates()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveDuplicates_ArrayWithDuplicates_ReturnsArrayWithoutDuplicates" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveDuplicates_ArrayWithDuplicates_ReturnsArrayWithoutDuplicates -->
+        <test-method signature="testRemoveDuplicates_ArrayWithoutDuplicates_ReturnsSameArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveDuplicates_ArrayWithoutDuplicates_ReturnsSameArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveDuplicates_ArrayWithoutDuplicates_ReturnsSameArray -->
+        <test-method signature="testRemoveDuplicates_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveDuplicates_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveDuplicates_NullArray_ReturnsNull -->
+        <test-method signature="testRemoveElement_ElementInArray_ReturnsArrayWithoutElement()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveElement_ElementInArray_ReturnsArrayWithoutElement" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveElement_ElementInArray_ReturnsArrayWithoutElement -->
+        <test-method signature="testRemoveElement_ElementNotInArray_ReturnsSameArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveElement_ElementNotInArray_ReturnsSameArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveElement_ElementNotInArray_ReturnsSameArray -->
+        <test-method signature="testRemoveElement_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testRemoveElement_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveElement_NullArray_ReturnsNull -->
+        <test-method signature="testReverse_NonEmptyArray_ReturnsReversedArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testReverse_NonEmptyArray_ReturnsReversedArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverse_NonEmptyArray_ReturnsReversedArray -->
+        <test-method signature="testReverse_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testReverse_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverse_NullArray_ReturnsNull -->
+        <test-method signature="testSort_EmptyArray_ReturnsEmptyArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testSort_EmptyArray_ReturnsEmptyArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSort_EmptyArray_ReturnsEmptyArray -->
+        <test-method signature="testSort_NonEmptyArray_ReturnsSortedArray()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testSort_NonEmptyArray_ReturnsSortedArray" finished-at="2023-06-25T14:22:41 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSort_NonEmptyArray_ReturnsSortedArray -->
+        <test-method signature="testSort_NullArray_ReturnsNull()[pri:0, instance:com.utils.shared.util.ArrayUtilTest@4ec4f3a0]" started-at="2023-06-25T14:22:41 CEST" name="testSort_NullArray_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSort_NullArray_ReturnsNull -->
+      </class> <!-- com.utils.shared.util.ArrayUtilTest -->
+      <class name="com.utils.shared.util.StringUtilTest">
+        <test-method signature="testCapitalizeWithEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCapitalizeWithEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCapitalizeWithEmptyString -->
+        <test-method signature="testCapitalizeWithLowercaseCharacter()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCapitalizeWithLowercaseCharacter" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCapitalizeWithLowercaseCharacter -->
+        <test-method signature="testCapitalizeWithLowercaseString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCapitalizeWithLowercaseString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCapitalizeWithLowercaseString -->
+        <test-method signature="testCapitalizeWithMultipleWords()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCapitalizeWithMultipleWords" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCapitalizeWithMultipleWords -->
+        <test-method signature="testCapitalizeWithUppercaseString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCapitalizeWithUppercaseString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCapitalizeWithUppercaseString -->
+        <test-method signature="testCountOccurrences_CaseInsensitive_ReturnsCorrectCount()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_CaseInsensitive_ReturnsCorrectCount" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_CaseInsensitive_ReturnsCorrectCount -->
+        <test-method signature="testCountOccurrences_CaseSensitive_ReturnsCorrectCount()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_CaseSensitive_ReturnsCorrectCount" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_CaseSensitive_ReturnsCorrectCount -->
+        <test-method signature="testCountOccurrences_EmptyString_ReturnsZero()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_EmptyString_ReturnsZero" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_EmptyString_ReturnsZero -->
+        <test-method signature="testCountOccurrences_EmptySubstring_ReturnsZero()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_EmptySubstring_ReturnsZero" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_EmptySubstring_ReturnsZero -->
+        <test-method signature="testCountOccurrences_NullString_ReturnsZero()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_NullString_ReturnsZero" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_NullString_ReturnsZero -->
+        <test-method signature="testCountOccurrences_NullSubstring_ReturnsZero()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testCountOccurrences_NullSubstring_ReturnsZero" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountOccurrences_NullSubstring_ReturnsZero -->
+        <test-method signature="testDeCapitalizeWithEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testDeCapitalizeWithEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeCapitalizeWithEmptyString -->
+        <test-method signature="testDeCapitalizeWithLowercaseString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testDeCapitalizeWithLowercaseString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeCapitalizeWithLowercaseString -->
+        <test-method signature="testDeCapitalizeWithMultipleWords()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testDeCapitalizeWithMultipleWords" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeCapitalizeWithMultipleWords -->
+        <test-method signature="testDeCapitalizeWithUppercaseCharacter()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testDeCapitalizeWithUppercaseCharacter" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeCapitalizeWithUppercaseCharacter -->
+        <test-method signature="testDeCapitalizeWithUppercaseString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testDeCapitalizeWithUppercaseString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeCapitalizeWithUppercaseString -->
+        <test-method signature="testEscape()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testEscape" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEscape -->
+        <test-method signature="testIsNotNullOrEmpty_EmptyString_ReturnsFalse()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNotNullOrEmpty_EmptyString_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNotNullOrEmpty_EmptyString_ReturnsFalse -->
+        <test-method signature="testIsNotNullOrEmpty_NonEmptyString_ReturnsTrue()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNotNullOrEmpty_NonEmptyString_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNotNullOrEmpty_NonEmptyString_ReturnsTrue -->
+        <test-method signature="testIsNotNullOrEmpty_NullString_ReturnsFalse()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNotNullOrEmpty_NullString_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNotNullOrEmpty_NullString_ReturnsFalse -->
+        <test-method signature="testIsNullOrEmpty_EmptyString_ReturnsTrue()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNullOrEmpty_EmptyString_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNullOrEmpty_EmptyString_ReturnsTrue -->
+        <test-method signature="testIsNullOrEmpty_NonEmptyString_ReturnsFalse()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNullOrEmpty_NonEmptyString_ReturnsFalse" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNullOrEmpty_NonEmptyString_ReturnsFalse -->
+        <test-method signature="testIsNullOrEmpty_NullString_ReturnsTrue()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsNullOrEmpty_NullString_ReturnsTrue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsNullOrEmpty_NullString_ReturnsTrue -->
+        <test-method signature="testIsPalindromeWithEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsPalindromeWithEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPalindromeWithEmptyString -->
+        <test-method signature="testIsPalindromeWithNonPalindromeString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsPalindromeWithNonPalindromeString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPalindromeWithNonPalindromeString -->
+        <test-method signature="testIsPalindromeWithPalindromeString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsPalindromeWithPalindromeString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPalindromeWithPalindromeString -->
+        <test-method signature="testIsPalindromeWithSingleCharString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testIsPalindromeWithSingleCharString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPalindromeWithSingleCharString -->
+        <test-method signature="testReverse_EmptyString_ReturnsEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testReverse_EmptyString_ReturnsEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverse_EmptyString_ReturnsEmptyString -->
+        <test-method signature="testReverse_NormalString_ReturnsReversedString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testReverse_NormalString_ReturnsReversedString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverse_NormalString_ReturnsReversedString -->
+        <test-method signature="testReverse_NullString_ReturnsNull()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testReverse_NullString_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReverse_NullString_ReturnsNull -->
+        <test-method signature="testToCharArrayWithEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testToCharArrayWithEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToCharArrayWithEmptyString -->
+        <test-method signature="testToCharArrayWithNonEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testToCharArrayWithNonEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToCharArrayWithNonEmptyString -->
+        <test-method signature="testTruncate_EmptyString_ReturnsEmptyString()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testTruncate_EmptyString_ReturnsEmptyString" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruncate_EmptyString_ReturnsEmptyString -->
+        <test-method signature="testTruncate_LongString_TruncatesAndAddsEllipsis()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testTruncate_LongString_TruncatesAndAddsEllipsis" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruncate_LongString_TruncatesAndAddsEllipsis -->
+        <test-method signature="testTruncate_NullString_ReturnsNull()[pri:0, instance:com.utils.shared.util.StringUtilTest@4550bb58]" started-at="2023-06-25T14:22:41 CEST" name="testTruncate_NullString_ReturnsNull" finished-at="2023-06-25T14:22:41 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTruncate_NullString_ReturnsNull -->
+      </class> <!-- com.utils.shared.util.StringUtilTest -->
+      <class name="com.utils.shared.util.ReflectionUtilTest">
+        <test-method signature="testCreateInstance()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testCreateInstance" finished-at="2023-06-25T14:22:41 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateInstance -->
+        <test-method signature="testCreateInstance_privateClass_cannotCreateInstance()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testCreateInstance_privateClass_cannotCreateInstance" finished-at="2023-06-25T14:22:41 CEST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateInstance_privateClass_cannotCreateInstance -->
+        <test-method signature="testSetFieldValue_booleanField_setsBooleanValue()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testSetFieldValue_booleanField_setsBooleanValue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFieldValue_booleanField_setsBooleanValue -->
+        <test-method signature="testSetFieldValue_intField_setsIntValue()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testSetFieldValue_intField_setsIntValue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFieldValue_intField_setsIntValue -->
+        <test-method signature="testSetFieldValue_nonExistingField_throwsReflectionException()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testSetFieldValue_nonExistingField_throwsReflectionException" finished-at="2023-06-25T14:22:41 CEST" duration-ms="4" status="PASS">
+          <exception class="com.utils.shared.util.ReflectionUtil$ReflectionException">
+            <message>
+              <![CDATA[Erreur lors de la récupération du champs]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[com.utils.shared.util.ReflectionUtil$ReflectionException: Erreur lors de la récupération du champs
+at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:48)
+at com.utils.shared.util.ReflectionUtil.setFieldValue(ReflectionUtils.java:61)
+at com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_nonExistingField_throwsReflectionException(ReflectionUtilsTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchFieldException: nonExistingField
+at java.base/java.lang.Class.getDeclaredField(Class.java:2663)
+at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:46)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.utils.shared.util.ReflectionUtil$ReflectionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFieldValue_nonExistingField_throwsReflectionException -->
+        <test-method signature="testSetFieldValue_stringField_setsStringValue()[pri:0, instance:com.utils.shared.util.ReflectionUtilTest@223191a6]" started-at="2023-06-25T14:22:41 CEST" name="testSetFieldValue_stringField_setsStringValue" finished-at="2023-06-25T14:22:41 CEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFieldValue_stringField_setsStringValue -->
+      </class> <!-- com.utils.shared.util.ReflectionUtilTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

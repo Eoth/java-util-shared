@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.utils.shared.util.JsonUtilTest">
+        <methods>
+          <include name="testFromJson_JsonCollection_ReturnsCollectionObject"/>
+          <include name="testFromJson_JsonString_ReturnsStringObject"/>
+          <include name="testFromJson_InvalidJson_ReturnsNull"/>
+          <include name="testFromJson_JsonObject_ReturnsMapObject"/>
+          <include name="testFromJson_JsonBoolean_ReturnsBooleanObject"/>
+          <include name="testFromJson_JsonArray_ReturnsArrayObject"/>
+          <include name="testFromJson_JsonNumber_ReturnsNumberObject"/>
+        </methods>
+      </class> <!-- com.utils.shared.util.JsonUtilTest -->
+      <class name="com.utils.shared.util.FileUtilTest">
+        <methods>
+          <include name="testListFilesInDirectory"/>
+          <include name="testCreateDirectoryStructure"/>
+          <include name="testReadFileAsString"/>
+          <include name="testWriteStringToFile"/>
+          <include name="testGetDirectorySize"/>
+          <include name="testFindFilesByExtension"/>
+        </methods>
+      </class> <!-- com.utils.shared.util.FileUtilTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

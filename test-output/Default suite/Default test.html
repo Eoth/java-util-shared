@@ -1,0 +1,1980 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>117/13/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 25 14:22:41 CEST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (931 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonString_ReturnsStringObject()'><b>testFromJson_JsonString_ReturnsStringObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [&quot;Hello, World!&quot;] but found [Hello, World!]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonString_ReturnsStringObject(JsonUtilsTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1898155970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898155970'><pre>java.lang.AssertionError: expected [&quot;Hello, World!&quot;] but found [Hello, World!]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonString_ReturnsStringObject(JsonUtilsTest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testCreateDirectoryStructure()'><b>testCreateDirectoryStructure</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.utils.shared.util.FileUtilTest.testCreateDirectoryStructure(FileUtilsTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1804379080", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1804379080'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at com.utils.shared.util.FileUtilTest.testCreateDirectoryStructure(FileUtilsTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonArray_ReturnsArrayObject()'><b>testFromJson_JsonArray_ReturnsArrayObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.AssertionError: Arrays not equal: expected: null and actual: [foo, bar, baz]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:1761)
+	at org.testng.Assert.assertEquals(Assert.java:1918)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonArray_ReturnsArrayObject(JsonUtilsTest.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1973233403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1973233403'><pre>java.lang.AssertionError: Arrays not equal: expected: null and actual: [foo, bar, baz]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:1761)
+	at org.testng.Assert.assertEquals(Assert.java:1918)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonArray_ReturnsArrayObject(JsonUtilsTest.java:116)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testGetDirectorySize()'><b>testGetDirectorySize</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [0] but found [1024]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:979)
+	at org.testng.Assert.assertEquals(Assert.java:955)
+	at org.testng.Assert.assertEquals(Assert.java:989)
+	at com.utils.shared.util.FileUtilTest.testGetDirectorySize(FileUtilsTest.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1710265848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1710265848'><pre>java.lang.AssertionError: expected [0] but found [1024]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:979)
+	at org.testng.Assert.assertEquals(Assert.java:955)
+	at org.testng.Assert.assertEquals(Assert.java:989)
+	at com.utils.shared.util.FileUtilTest.testGetDirectorySize(FileUtilsTest.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testReadFileAsString()'><b>testReadFileAsString</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+	at com.utils.shared.util.FileUtilTest.testReadFileAsString(FileUtilsTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1025309396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1025309396'><pre>java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+	at com.utils.shared.util.FileUtilTest.testReadFileAsString(FileUtilsTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonCollection_ReturnsCollectionObject()'><b>testFromJson_JsonCollection_ReturnsCollectionObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.AssertionError: Collections not equal: expected: null and actual: [foo, bar, baz]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:1625)
+	at org.testng.Assert.assertEquals(Assert.java:1605)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonCollection_ReturnsCollectionObject(JsonUtilsTest.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1237825806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237825806'><pre>java.lang.AssertionError: Collections not equal: expected: null and actual: [foo, bar, baz]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:1625)
+	at org.testng.Assert.assertEquals(Assert.java:1605)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonCollection_ReturnsCollectionObject(JsonUtilsTest.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonBoolean_ReturnsBooleanObject()'><b>testFromJson_JsonBoolean_ReturnsBooleanObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.ClassCastException: Cannot cast java.lang.Boolean to boolean
+	at java.base/java.lang.Class.cast(Class.java:3946)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:209)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonBoolean_ReturnsBooleanObject(JsonUtilsTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1866875501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1866875501'><pre>java.lang.ClassCastException: Cannot cast java.lang.Boolean to boolean
+	at java.base/java.lang.Class.cast(Class.java:3946)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:209)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonBoolean_ReturnsBooleanObject(JsonUtilsTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testWriteStringToFile()'><b>testWriteStringToFile</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:124)
+	at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+	at com.utils.shared.util.FileUtilTest.testWriteStringToFile(FileUtilsTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1950701640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950701640'><pre>java.io.FileNotFoundException: path\to\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:124)
+	at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+	at com.utils.shared.util.FileUtilTest.testWriteStringToFile(FileUtilsTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testListFilesInDirectory()'><b>testListFilesInDirectory</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [0] but found [2]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.utils.shared.util.FileUtilTest.testListFilesInDirectory(FileUtilsTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace879583678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace879583678'><pre>java.lang.AssertionError: expected [0] but found [2]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.utils.shared.util.FileUtilTest.testListFilesInDirectory(FileUtilsTest.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testFindFilesByExtension()'><b>testFindFilesByExtension</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [0] but found [2]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.utils.shared.util.FileUtilTest.testFindFilesByExtension(FileUtilsTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace980138431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980138431'><pre>java.lang.AssertionError: expected [0] but found [2]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1418)
+	at org.testng.Assert.assertEquals(Assert.java:1382)
+	at org.testng.Assert.assertEquals(Assert.java:1428)
+	at com.utils.shared.util.FileUtilTest.testFindFilesByExtension(FileUtilsTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonNumber_ReturnsNumberObject()'><b>testFromJson_JsonNumber_ReturnsNumberObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.ClassCastException: Cannot cast java.lang.Integer to int
+	at java.base/java.lang.Class.cast(Class.java:3946)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:201)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonNumber_ReturnsNumberObject(JsonUtilsTest.java:99)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1297836716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1297836716'><pre>java.lang.ClassCastException: Cannot cast java.lang.Integer to int
+	at java.base/java.lang.Class.cast(Class.java:3946)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:201)
+	at com.utils.shared.util.JsonUtil.fromJson(JsonUtils.java:190)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonNumber_ReturnsNumberObject(JsonUtilsTest.java:99)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_InvalidJson_ReturnsNull()'><b>testFromJson_InvalidJson_ReturnsNull</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.AssertionError: expected [null] but found [java.lang.Object@79da8dc5]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1573)
+	at org.testng.Assert.assertNull(Assert.java:1506)
+	at org.testng.Assert.assertNull(Assert.java:1494)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_InvalidJson_ReturnsNull(JsonUtilsTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1728579441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728579441'><pre>java.lang.AssertionError: expected [null] but found [java.lang.Object@79da8dc5]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotSame(Assert.java:1573)
+	at org.testng.Assert.assertNull(Assert.java:1506)
+	at org.testng.Assert.assertNull(Assert.java:1494)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_InvalidJson_ReturnsNull(JsonUtilsTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_JsonObject_ReturnsMapObject()'><b>testFromJson_JsonObject_ReturnsMapObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td><div><pre>java.lang.AssertionError: Maps not equal: expected: null and actual: {name=John Doe, age=30, employed=true}
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:2131)
+	at org.testng.Assert.assertEquals(Assert.java:2089)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonObject_ReturnsMapObject(JsonUtilsTest.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1409545055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409545055'><pre>java.lang.AssertionError: Maps not equal: expected: null and actual: {name=John Doe, age=30, employed=true}
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.assertEquals(Assert.java:2131)
+	at org.testng.Assert.assertEquals(Assert.java:2089)
+	at com.utils.shared.util.JsonUtilTest.testFromJson_JsonObject_ReturnsMapObject(JsonUtilsTest.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.utils.shared.util.ObjectUtilTest.testIsNotNull()'><b>testIsNotNull</b><br>Test class: com.utils.shared.util.ObjectUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ObjectUtilTest@6adbc9d</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Collections_DifferentElements()'><b>testCompareObjects_Collections_DifferentElements</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.ObjectUtilTest.testEquals()'><b>testEquals</b><br>Test class: com.utils.shared.util.ObjectUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ObjectUtilTest@6adbc9d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testTruncate_LongString_TruncatesAndAddsEllipsis()'><b>testTruncate_LongString_TruncatesAndAddsEllipsis</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testDeCapitalizeWithEmptyString()'><b>testDeCapitalizeWithEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIsEmpty_NullArray_ReturnsTrue()'><b>testIsEmpty_NullArray_ReturnsTrue</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testDeCapitalizeWithMultipleWords()'><b>testDeCapitalizeWithMultipleWords</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testContains_NullArray_ReturnsFalse()'><b>testContains_NullArray_ReturnsFalse</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_EmptyString_ReturnsZero()'><b>testCountOccurrences_EmptyString_ReturnsZero</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_NumberObject_ReturnsJsonNumber()'><b>testToJson_NumberObject_ReturnsJsonNumber</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testAreEqualDates_DifferentDates()'><b>testAreEqualDates_DifferentDates</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNullOrEmpty_NullString_ReturnsTrue()'><b>testIsNullOrEmpty_NullString_ReturnsTrue</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ObjectUtilTest.testCast()'><b>testCast</b><br>Test class: com.utils.shared.util.ObjectUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ObjectUtilTest@6adbc9d</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testSort_NonEmptyArray_ReturnsSortedArray()'><b>testSort_NonEmptyArray_ReturnsSortedArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testIsAfter()'><b>testIsAfter</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ObjectUtilTest.testDeepCopy()'><b>testDeepCopy</b><br>Test class: com.utils.shared.util.ObjectUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ObjectUtilTest@6adbc9d</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveDuplicates_ArrayWithoutDuplicates_ReturnsSameArray()'><b>testRemoveDuplicates_ArrayWithoutDuplicates_ReturnsSameArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNullOrEmpty_NonEmptyString_ReturnsFalse()'><b>testIsNullOrEmpty_NonEmptyString_ReturnsFalse</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsPalindromeWithPalindromeString()'><b>testIsPalindromeWithPalindromeString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_DifferentTypes()'><b>testCompareObjects_DifferentTypes</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testTruncate_EmptyString_ReturnsEmptyString()'><b>testTruncate_EmptyString_ReturnsEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsPalindromeWithSingleCharString()'><b>testIsPalindromeWithSingleCharString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_ComplexObjects_Null()'><b>testCompareObjects_ComplexObjects_Null</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_CaseSensitive_ReturnsCorrectCount()'><b>testCountOccurrences_CaseSensitive_ReturnsCorrectCount</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testSort_EmptyArray_ReturnsEmptyArray()'><b>testSort_EmptyArray_ReturnsEmptyArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_ArrayObject_ReturnsJsonArray()'><b>testToJson_ArrayObject_ReturnsJsonArray</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Collections()'><b>testCompareObjects_Collections</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_NullSubstring_ReturnsZero()'><b>testCountOccurrences_NullSubstring_ReturnsZero</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveDuplicates_NullArray_ReturnsNull()'><b>testRemoveDuplicates_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testDeCapitalizeWithUppercaseCharacter()'><b>testDeCapitalizeWithUppercaseCharacter</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testDeCapitalizeWithUppercaseString()'><b>testDeCapitalizeWithUppercaseString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Collections_DifferentSizes()'><b>testCompareObjects_Collections_DifferentSizes</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testCreateInstance_privateClass_cannotCreateInstance()'><b>testCreateInstance_privateClass_cannotCreateInstance</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_intField_setsIntValue()'><b>testSetFieldValue_intField_setsIntValue</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Null()'><b>testCompareObjects_Null</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsPalindromeWithNonPalindromeString()'><b>testIsPalindromeWithNonPalindromeString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_NullString_ReturnsZero()'><b>testCountOccurrences_NullString_ReturnsZero</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_ComplexObjects_DifferentFields()'><b>testCompareObjects_ComplexObjects_DifferentFields</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testWriteStringToFile_invalidFile()'><b>testWriteStringToFile_invalidFile</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:124)
+	at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+	at com.utils.shared.util.FileUtilTest.testWriteStringToFile_invalidFile(FileUtilsTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace931480286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931480286'><pre>java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:124)
+	at com.utils.shared.util.FileUtil.writeStringToFile(FileUtils.java:243)
+	at com.utils.shared.util.FileUtilTest.testWriteStringToFile_invalidFile(FileUtilsTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testReverse_NullArray_ReturnsNull()'><b>testReverse_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNotNullOrEmpty_NullString_ReturnsFalse()'><b>testIsNotNullOrEmpty_NullString_ReturnsFalse</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testIsBefore()'><b>testIsBefore</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCapitalizeWithUppercaseString()'><b>testCapitalizeWithUppercaseString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.data.PopulatorTest.testPopulate_shouldPopulateWithoutOption()'><b>testPopulate_shouldPopulateWithoutOption</b><br>Test class: com.utils.shared.unit.test.data.PopulatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.data.PopulatorTest@7f0eb4b4</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testDeCapitalizeWithLowercaseString()'><b>testDeCapitalizeWithLowercaseString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCapitalizeWithLowercaseCharacter()'><b>testCapitalizeWithLowercaseCharacter</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ObjectUtilTest.testIsNull()'><b>testIsNull</b><br>Test class: com.utils.shared.util.ObjectUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ObjectUtilTest@6adbc9d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCapitalizeWithEmptyString()'><b>testCapitalizeWithEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testToCharArrayWithNonEmptyString()'><b>testToCharArrayWithNonEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testFromJson_NullJson_ReturnsNull()'><b>testFromJson_NullJson_ReturnsNull</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNullOrEmpty_EmptyString_ReturnsTrue()'><b>testIsNullOrEmpty_EmptyString_ReturnsTrue</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testFindMax_NonEmptyArray_ReturnsMaxElement()'><b>testFindMax_NonEmptyArray_ReturnsMaxElement</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testParseDate_InvalidFormat()'><b>testParseDate_InvalidFormat</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveElement_ElementInArray_ReturnsArrayWithoutElement()'><b>testRemoveElement_ElementInArray_ReturnsArrayWithoutElement</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_CollectionObject_ReturnsJsonArray()'><b>testToJson_CollectionObject_ReturnsJsonArray</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_CaseInsensitive_ReturnsCorrectCount()'><b>testCountOccurrences_CaseInsensitive_ReturnsCorrectCount</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testFindMax_EmptyArray_ReturnsNull()'><b>testFindMax_EmptyArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+	at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+	at com.utils.shared.util.ArrayUtilTest.testFindMax_EmptyArray_ReturnsNull(ArrayUtilsTest.java:207)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace37926966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37926966'><pre>java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+	at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+	at com.utils.shared.util.ArrayUtilTest.testFindMax_EmptyArray_ReturnsNull(ArrayUtilsTest.java:207)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_nonExistingField_throwsReflectionException()'><b>testSetFieldValue_nonExistingField_throwsReflectionException</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td><div><pre>com.utils.shared.util.ReflectionUtil$ReflectionException: Erreur lors de la récupération du champs
+	at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:48)
+	at com.utils.shared.util.ReflectionUtil.setFieldValue(ReflectionUtils.java:61)
+	at com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_nonExistingField_throwsReflectionException(ReflectionUtilsTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchFieldException: nonExistingField
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2663)
+	at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:46)
+	... 28 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace238357312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace238357312'><pre>com.utils.shared.util.ReflectionUtil$ReflectionException: Erreur lors de la récupération du champs
+	at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:48)
+	at com.utils.shared.util.ReflectionUtil.setFieldValue(ReflectionUtils.java:61)
+	at com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_nonExistingField_throwsReflectionException(ReflectionUtilsTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchFieldException: nonExistingField
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2663)
+	at com.utils.shared.util.ReflectionUtil.getField(ReflectionUtils.java:46)
+	... 28 more
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsPalindromeWithEmptyString()'><b>testIsPalindromeWithEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveElement_NullArray_ReturnsNull()'><b>testRemoveElement_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_booleanField_setsBooleanValue()'><b>testSetFieldValue_booleanField_setsBooleanValue</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testTruncate_NullString_ReturnsNull()'><b>testTruncate_NullString_ReturnsNull</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testReverse_EmptyString_ReturnsEmptyString()'><b>testReverse_EmptyString_ReturnsEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testGetSubArray_InvalidIndexes_ReturnsNull()'><b>testGetSubArray_InvalidIndexes_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: L&apos;index de début est supérieur à l&apos;index de fin
+	at com.utils.shared.util.ArrayUtil.subarray(ArrayUtils.java:82)
+	at com.utils.shared.util.ArrayUtilTest.testGetSubArray_InvalidIndexes_ReturnsNull(ArrayUtilsTest.java:166)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1514476350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1514476350'><pre>java.lang.IllegalArgumentException: L&apos;index de début est supérieur à l&apos;index de fin
+	at com.utils.shared.util.ArrayUtil.subarray(ArrayUtils.java:82)
+	at com.utils.shared.util.ArrayUtilTest.testGetSubArray_InvalidIndexes_ReturnsNull(ArrayUtilsTest.java:166)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNotNullOrEmpty_NonEmptyString_ReturnsTrue()'><b>testIsNotNullOrEmpty_NonEmptyString_ReturnsTrue</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIndexOf_ElementInArray_ReturnsCorrectIndex()'><b>testIndexOf_ElementInArray_ReturnsCorrectIndex</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIsEmpty_NonEmptyArray_ReturnsFalse()'><b>testIsEmpty_NonEmptyArray_ReturnsFalse</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testParseDate_NullDate()'><b>testParseDate_NullDate</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testCreateInstance()'><b>testCreateInstance</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Collections_Empty()'><b>testCompareObjects_Collections_Empty</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_ComplexObjects()'><b>testCompareObjects_ComplexObjects</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCapitalizeWithMultipleWords()'><b>testCapitalizeWithMultipleWords</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testReverse_NonEmptyArray_ReturnsReversedArray()'><b>testReverse_NonEmptyArray_ReturnsReversedArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_StringObject_ReturnsJsonString()'><b>testToJson_StringObject_ReturnsJsonString</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testToCharArrayWithEmptyString()'><b>testToCharArrayWithEmptyString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCountOccurrences_EmptySubstring_ReturnsZero()'><b>testCountOccurrences_EmptySubstring_ReturnsZero</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testParseDate()'><b>testParseDate</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testGetSubArray_ValidIndexes_ReturnsSubArray()'><b>testGetSubArray_ValidIndexes_ReturnsSubArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.data.PopulatorTest.testPopulate_shouldPopulateWithOption()'><b>testPopulate_shouldPopulateWithOption</b><br>Test class: com.utils.shared.unit.test.data.PopulatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.data.PopulatorTest@7f0eb4b4</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testMerge_NullArrayWithNonEmptyArray_ReturnsNonEmptyArray()'><b>testMerge_NullArrayWithNonEmptyArray_ReturnsNonEmptyArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIsEmpty_EmptyArray_ReturnsTrue()'><b>testIsEmpty_EmptyArray_ReturnsTrue</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testIsNotNullOrEmpty_EmptyString_ReturnsFalse()'><b>testIsNotNullOrEmpty_EmptyString_ReturnsFalse</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIndexOf_NullArray_ReturnsMinusOne()'><b>testIndexOf_NullArray_ReturnsMinusOne</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testReverse_NormalString_ReturnsReversedString()'><b>testReverse_NormalString_ReturnsReversedString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testCapitalizeWithLowercaseString()'><b>testCapitalizeWithLowercaseString</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveDuplicates_ArrayWithDuplicates_ReturnsArrayWithoutDuplicates()'><b>testRemoveDuplicates_ArrayWithDuplicates_ReturnsArrayWithoutDuplicates</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testSort_NullArray_ReturnsNull()'><b>testSort_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_ImmutableType_NotEqual()'><b>testCompareObjects_ImmutableType_NotEqual</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testMerge_TwoNonEmptyArrays_ReturnsMergedArray()'><b>testMerge_TwoNonEmptyArrays_ReturnsMergedArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testFormatDate_NullDate()'><b>testFormatDate_NullDate</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testRemoveElement_ElementNotInArray_ReturnsSameArray()'><b>testRemoveElement_ElementNotInArray_ReturnsSameArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testGetDirectorySize_invalidDirectory()'><b>testGetDirectorySize_invalidDirectory</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testReadFileAsString_invalidFile()'><b>testReadFileAsString_invalidFile</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td><div><pre>java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+	at com.utils.shared.util.FileUtilTest.testReadFileAsString_invalidFile(FileUtilsTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace752001567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752001567'><pre>java.io.FileNotFoundException: invalid\file.txt (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:158)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:112)
+	at com.utils.shared.util.FileUtil.readFileAsString(FileUtils.java:217)
+	at com.utils.shared.util.FileUtilTest.testReadFileAsString_invalidFile(FileUtilsTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testIsBefore_NotBefore()'><b>testIsBefore_NotBefore</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testGetSubArray_NullArray_ReturnsNull()'><b>testGetSubArray_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testMerge_NonEmptyArrayWithNullArray_ReturnsNonEmptyArray()'><b>testMerge_NonEmptyArrayWithNullArray_ReturnsNonEmptyArray</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testContains_ElementNotInArray_ReturnsFalse()'><b>testContains_ElementNotInArray_ReturnsFalse</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testAddDays()'><b>testAddDays</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testFormatDate()'><b>testFormatDate</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testGetDifferenceInDays()'><b>testGetDifferenceInDays</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ReflectionUtilTest.testSetFieldValue_stringField_setsStringValue()'><b>testSetFieldValue_stringField_setsStringValue</b><br>Test class: com.utils.shared.util.ReflectionUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ReflectionUtilTest@223191a6</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testFindMax_NullArray_ReturnsNull()'><b>testFindMax_NullArray_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+	at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+	at com.utils.shared.util.ArrayUtilTest.testFindMax_NullArray_ReturnsNull(ArrayUtilsTest.java:201)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace155361948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace155361948'><pre>java.lang.IllegalArgumentException: Le tableau est vide ou nul.
+	at com.utils.shared.util.ArrayUtil.findMax(ArrayUtils.java:296)
+	at com.utils.shared.util.ArrayUtilTest.testFindMax_NullArray_ReturnsNull(ArrayUtilsTest.java:201)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testReverse_NullString_ReturnsNull()'><b>testReverse_NullString_ReturnsNull</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testIndexOf_ElementNotInArray_ReturnsMinusOne()'><b>testIndexOf_ElementNotInArray_ReturnsMinusOne</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testContains_ElementInArray_ReturnsTrue()'><b>testContains_ElementInArray_ReturnsTrue</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testIsAfter_NotAfter()'><b>testIsAfter_NotAfter</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_ImmutableType()'><b>testCompareObjects_ImmutableType</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_NullObject_ReturnsNull()'><b>testToJson_NullObject_ReturnsNull</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.StringUtilTest.testEscape()'><b>testEscape</b><br>Test class: com.utils.shared.util.StringUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.StringUtilTest@4550bb58</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_MapObject_ReturnsJsonObject()'><b>testToJson_MapObject_ReturnsJsonObject</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.util.FileUtilTest.testCreateDirectoryStructure_invalidRoot()'><b>testCreateDirectoryStructure_invalidRoot</b><br>Test class: com.utils.shared.util.FileUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.FileUtilTest@5c33f1a9</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testCalculateAge()'><b>testCalculateAge</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.util.ArrayUtilTest.testMerge_NullArrays_ReturnsNull()'><b>testMerge_NullArrays_ReturnsNull</b><br>Test class: com.utils.shared.util.ArrayUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.ArrayUtilTest@4ec4f3a0</td></tr>
+<tr>
+<td title='com.utils.shared.util.DateUtilTest.testAreEqualDates()'><b>testAreEqualDates</b><br>Test class: com.utils.shared.util.DateUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.DateUtilTest@c8c12ac</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects()'><b>testCompareObjects</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+<tr>
+<td title='com.utils.shared.util.JsonUtilTest.testToJson_BooleanObject_ReturnsJsonBoolean()'><b>testToJson_BooleanObject_ReturnsJsonBoolean</b><br>Test class: com.utils.shared.util.JsonUtilTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.util.JsonUtilTest@1623b78d</td></tr>
+<tr>
+<td title='com.utils.shared.unit.test.assertions.ObjectComparatorTest.testCompareObjects_Collections_Null()'><b>testCompareObjects_Collections_Null</b><br>Test class: com.utils.shared.unit.test.assertions.ObjectComparatorTest</td>
+<td></td>
+<td>0</td>
+<td>com.utils.shared.unit.test.assertions.ObjectComparatorTest@8f4ea7c</td></tr>
+</table><p>
+</body>
+</html>
